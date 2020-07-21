@@ -6,7 +6,7 @@ class School
     @roster = {}
   end
   def add_student(name, num)
-    if roster.include?(num) == false #I don't understand this part
+    if roster.include?(num) == false #this line checks if there is nothing. If there is nothing it creates a space for a key (num or grade)
        roster[num] = []
     end
       roster[num] << name
